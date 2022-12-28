@@ -1,0 +1,135 @@
+/* Section */
+
+section {
+    margin-top: 96px;
+}
+
+section.hero-section {
+    margin-top: 0;
+}
+
+section.programs-section.py-2 {
+    margin: 0;
+}
+
+/* Layout gird */
+.layout__grid {
+    display: grid;
+    grid-template-columns: 1fr; 
+}
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 120px;
+    margin-bottom: 144px;
+}
+
+.grid__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 8px solid #6D7D8B;
+    box-shadow: 5px 5px 35px rgba(52, 53, 61, 0.22);
+    border-radius: 8px;
+    background: #DAE3EA;
+    min-width: 504px;
+    height: 504px;
+    justify-self: flex-end;
+}
+
+.grid__info {
+    max-width: 504px;
+    align-self: center;
+}
+
+.grid__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid__info .grid__text {
+    margin: 40px 0 48px 0px;
+}
+
+.flex {
+    width: 100%;
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 72px;
+}
+
+/* Buttons */
+
+.btn {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    border: 2px solid var(--black-color);
+    border-radius: 60px;
+    padding: 12px 16px;
+    display: inline-block;
+    margin-right: 16px;
+    text-align: center;
+    cursor: pointer;
+} 
+
+.btn:hover {
+    transform: scale(0.98);
+}
+
+.btn--primary {
+    background: var(--black-color);
+    color: #fff;
+}
+
+.btn--ghost:hover {
+    background-color: rgba(0, 0, 0, 0.047);
+}
+
+/* Cards */
+
+.card {
+    position: relative;
+    text-align: center;
+    box-shadow: 5px 5px 35px rgba(52, 53, 61, 0.22);
+    border-radius: 8px;
+    padding: 56px 24px 24px;
+    background: #fff;;
+}
+
+/* Font-Weights */
+
+.thin {
+    font-weight: 300;
+}
+
+.reg {
+    font-weight: 400;    
+}
+
+.med {
+    font-weight: 500;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.py-2 {
+    padding-top: 32px;
+}
