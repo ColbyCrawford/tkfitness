@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/utilities.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>About</title>
+    <title>Contact</title>
 </head>
 <body>
-    <header>
+    <header class="main-nav">
         <nav class="navigation container">
             <img class="navigation__logo" src="images/logo-black.svg" alt="">
             <ul class="navigation__links">
@@ -22,36 +22,42 @@
     </header>
     
 
-    <main class="contact">
+    <main class="site-main">
         <div class="container">
-            <h1 class="page-title">Contact</h1>
-            <h4 class="page-tag">Contact</h4>
-            <img src="" alt="" class="heading-img">
-            <img src="" alt="" class="icon-email">
-            <h3 class="page-subtitle">Send me an email</h3>
-            <form action="_submit" class="form e-contact-form page-grid">
-                <div class="form-item">
-                    <label for="name">FULL NAME</label>
-                    <input type="text" name="name" id="name">
+            <header class="page-header">
+                <h1 class="page-title">Contact</h1>
+                <h4 class="page-subtitle">LETS CONNECT</h4>
+                <iframe class="page-showcase" src="https://www.google.com/maps/d/embed?mid=1ekEr2REmkH7mU2eVVMNnMmN4mWo&hl=en_US&ehbc=2E312F" width="640" height="480"></iframe>
+            </header>
+            <div class="form-container">
+                <div class="form-title">
+                    <img src="images/mail-black.svg" alt="" class="icon-email">
+                    <h3 class="page-subtitle">Send me an email</h3>
                 </div>
-                <div class="form-item">
-                    <label for="name">EMAIL</label>
-                    <input type="text" name="name" id="name">
-                </div>
-                <div class="form-item">
-                    <label for="name">HOW DID YOU HEAR ABOUT US?</label>
-                    <input type="text" name="name" id="name">
-                </div>
-                <div class="form-item">
-                    <label for="name">MESSAGE US</label>
-                    <input type="text" name="name" id="name">
-                </div>
-                <input type="submit" value="Submit">
-            </form>
+                <form action="_submit" class="form e-contact-form page-grid">
+                    <div class="form-item">
+                        <label for="name">FULL NAME</label>
+                        <input type="text" name="name" id="name" placeholder="Name">
+                    </div>
+                    <div class="form-item">
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="email" id="email" placeholder="Email">
+                    </div>
+                    <div class="form-item col-full">
+                        <label for="referal">HOW DID YOU HEAR ABOUT US?</label>
+                        <select name="referal" id="referal"></select>
+                    </div>
+                    <div class="form-item col-full">
+                        <label for="message">MESSAGE US</label>
+                        <textarea name="message" id="message" placeholder="Type your message here..."></textarea>
+                    </div>
+                    <input class="form-item col-full" type="submit" value="Submit">
+                </form>
+            </div>
+
+
         </div>
     </main>    
-
-
 
 
     <footer>
@@ -98,5 +104,6 @@
             </div>
         </div>
     </footer>
+
 </body>
 </html>

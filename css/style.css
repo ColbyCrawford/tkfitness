@@ -56,6 +56,10 @@ p {
     font-weight: 600;
 }
 
+iframe {
+    border: none;
+}
+
 .caption {
     font-size: 14px;
     line-height: 24px;
@@ -77,7 +81,7 @@ ul {
 }
 
 /* Navigation */
-header {
+.main-nav {
     position: absolute;
     left: 0;
     top: 0;
@@ -103,7 +107,7 @@ nav ul li {
 
 nav ul a { 
     font-weight: 700;
-    padding: 12px 8px;
+    padding: 12px 0;
 }
 
 nav ul li a:hover {
@@ -113,37 +117,43 @@ nav ul li a:hover {
 /* Hero Section */ 
 .hero-section {
     position: relative;
-    box-shadow: inset 0 0 0 2000px rgba(250, 253, 255, 0.699);
+    /* box-shadow: inset 0 0 0 2000px rgba(250, 253, 255, 0.699); */
+}
+
+.hero-section .container {
+    background-image: url('/images/portrait-no-bg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top 50px right -200px;
+    
 }
 
 .hero-section .flex {
     justify-content: center;
-    align-items: flex-start;
+    align-items: stretch;
     flex-direction: column;
     padding: 200px 0 200px 0;
 }
 
-.hero-section::before {
-    content: '';
-    background: url('../images/hero-bg-img.jpeg');
-    background-position: center;
-    background-size: cover;
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1000;
-    transform: scaleX(-1);
-}
-
-.hero-section h1 {
+.hero-title {
     max-width: 570px;
+    font-weight: 700;
 }
 
-.hero-section h2 {
-    max-width: 650px;
-    margin: 24px 0 56px;
+.hero-title span {
+    color: var(--dark-grey-color);
+}
+
+.hero-section .hero-desc {
+    font-size: 24px;
+    line-height: 1.5;
+    max-width: 672px;
+    margin: 32px 0 40px;
+    color: var(--dark-grey-color);
+}
+
+.hero-content.flex {
+    gap: 0;
 }
 
 /* Services Section */ 
@@ -154,6 +164,10 @@ nav ul li a:hover {
 .services-content {
     position: relative;
     margin-top: 120px;
+}
+
+.services-content.flex {
+    align-items: flex-start;
 }
 
 .services-content .pattern-img {
@@ -238,9 +252,9 @@ nav ul li a:hover {
 .programs-section .card {
     text-align: left;
     padding: 0;
-    border-radius: 16px;
-    border-top: 8px solid var(--black-color);
-    max-width: 328px;
+    border-radius: 8px;
+    border-top: 6px solid var(--black-color);
+    max-width: 352px;
 }
 
 .programs-section .card.most-popular {
@@ -470,17 +484,6 @@ nav ul li a:hover {
 }
 
 /* ABOUT-PAGE */
-.page-heading {
-    text-align: center;
-    padding-top: 104px;
-}
-
-.page-heading .header-img {
-    width: 100%;
-    min-height: 400px;
-    margin-top: 40px;
-    background-color: var(--light-grey-color);
-}
 
 .about-content {
     max-width: 800px;
