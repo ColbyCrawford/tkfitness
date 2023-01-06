@@ -25,6 +25,8 @@ section.programs-section.py-2 {
     padding: 0 40px;
 }
 
+/* Two-Col Grid */
+
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -36,29 +38,38 @@ section.programs-section.py-2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 8px solid #6D7D8B;
     box-shadow: 5px 5px 35px rgba(52, 53, 61, 0.22);
-    border-radius: 8px;
-    background: #DAE3EA;
     min-width: 504px;
     height: 504px;
     justify-self: flex-end;
+    border-top-right-radius: 40px;
+    position: relative;
 }
 
 .grid__img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-top-right-radius: 40px ;
+    
 }
 
-.grid__info {
-    max-width: 504px;
-    align-self: center;
+.grid__img::after {
+    content: '';
+    position: absolute;
+    top: 100px;
+    left: -80px;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-light);
+    z-index: -5;
 }
 
 .grid__info {
     display: flex;
     flex-direction: column;
+    max-width: 504px;
+    align-self: center;
 }
 
 .grid__info .grid__text {
@@ -99,13 +110,15 @@ section.programs-section.py-2 {
 }
 
 .btn--primary {
-    background: var(--black-color);
+    border: 2px solid var(--primary-normal);
+    background: var(--primary-normal);
     color: #fff;
 }
 
 .btn--ghost:hover {
     background-color: rgba(0, 0, 0, 0.047);
 }
+
 
 /* Cards */
 
@@ -145,7 +158,7 @@ section.programs-section.py-2 {
     object-position: 50% 25%;
 }
 
-/* Page Header-2 */
+/* Page-Header--2 */
 
 .page-header {
     text-align: center;
