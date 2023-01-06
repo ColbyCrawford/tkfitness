@@ -645,7 +645,7 @@ footer span {
     font-size: 18px;
     line-height: 32px;
     font-weight: 600;
-    color: var(--grey-color);
+    color: var(--dark-grey-color);
     transition: 0.3s ease;
 }
 
