@@ -43,7 +43,7 @@ h2 {
 
 h3 {
     font-size: 24px;
-    line-height: 40px;
+    line-height: 32px;
     font-weight: 700;
 }
 
@@ -540,7 +540,7 @@ nav ul li a:hover {
 }
 
 .about-info {
-    padding-bottom: 240px;
+    padding-bottom: 80px;
 }
 
 /* PROGRAMS-PAGE */
