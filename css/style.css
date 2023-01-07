@@ -133,13 +133,13 @@ nav ul li a:hover {
     flex-grow: 1;
     flex-shrink: 2;
     position: relative;
-    left: -100px;
+    left: -175px;
     height: 100%;
 }
 
 .hero-img {
-    width: 150%;
-    height: 150%;
+    width: 195%;
+    height: 195%;
     object-fit: cover;
 }
 
