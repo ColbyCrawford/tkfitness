@@ -29,19 +29,14 @@ section.programs-section.py-2 {
 
 .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 120px;
     margin-bottom: 144px;
 }
 
 .grid__img {
     display: flex;
-    justify-content: center;
-    align-items: center;
     box-shadow: 5px 5px 35px rgba(52, 53, 61, 0.22);
-    min-width: 504px;
-    height: 504px;
-    justify-self: flex-end;
     border-top-right-radius: 40px;
     position: relative;
 }
