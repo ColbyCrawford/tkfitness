@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/utilities.css">
     <link rel="stylesheet" href="css/style.css">
     <title>TK Fitness</title>
@@ -11,14 +12,18 @@
 <body>
     <main class="layout__grid">
         <header class="main-nav">
-            <nav class="navigation container">
+            <nav class="navigation container flex">
                 <img class="navigation__logo" src="images/logo-black.svg" alt="">
                 <ul class="navigation__links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="contact.html" class="btn">Book clarity call</a></li>
+                    <!-- <li><i class="fa fa-times fa-2x nav-close"></i></li> -->
                  </ul>
+                 <!-- <i class="fa fa-bars fa-2x nav-hamburger"></i> -->
+                 <div class="nav-control"></div>
+                 <div class="menu-overlay"></div>
             </nav>
         </header>
 
@@ -26,7 +31,7 @@
             <div class="container">
                 <div class="hero-content flex">
                     <div class="hero-text">
-                        <h1 class="hero-title">TK Fitness <br> <span>| Integrated Training</span></h1>
+                        <h1 class="hero-title">TK Fitness <br> <span>| Integrated Fitness</span></h1>
                         <h2 class="hero-desc">An integrated functional fitness program consisting of strength, conditioning and mobility work. All individualized to meet your specific needs.</h2>
                         <div class="hero-cta-btns">
                             <a href="#" class="btn">View services</a>
@@ -370,5 +375,6 @@
             </div>
         </footer>
     </main>
+    <script src="js/script.js"></script>
 </body>
 </html>
