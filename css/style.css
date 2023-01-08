@@ -954,6 +954,23 @@ footer .social-links img {
         width: 75vw;
     }
 
+     /* HOME | hero-section */
+    .hero-content .hero-cta-btns  .btn{
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .hero-text .hero-title {
+        font-size: 32px;
+        line-height: 48px;
+     }
+
+     .hero-text .hero-title span {
+        font-size: 24px;
+     }
+
+    
+
     /* FOOTER */
 
     .footer .grid {
@@ -981,11 +998,7 @@ footer .social-links img {
     }
 
 
-    /* HOME | hero-section */
-    .hero-content .hero-cta-btns  .btn{
-        width: 100%;
-        margin-bottom: 8px;
-    }
+    
 
 
 }
