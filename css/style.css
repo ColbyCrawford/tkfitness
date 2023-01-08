@@ -744,6 +744,7 @@ footer form .btn {
     padding: 8px 40px;
     border-radius: 4px;
     font-weight: 400;
+    -webkit-appearance: none;
 }
 
 .footer-links h3,
