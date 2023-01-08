@@ -744,6 +744,9 @@ footer form .btn {
     padding: 8px 40px;
     border-radius: 4px;
     font-weight: 400;
+}
+
+input {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
