@@ -269,24 +269,22 @@ nav ul li a:hover {
     list-style: none;
 }
 
-.perks-section .grid__text span {
+.perks-section .grid__text li {
     font-weight: 600;
     font-size: 18px;
     line-height: 32px;
     color: #6D7D8B;
-    padding-left: 16px;
-    display: inline-block;
+    padding-left: 40px;
+    margin-bottom: 8px;
+    position: relative;
 }
 
-.perks-section .grid__text ul li {
-    margin-bottom: 8px;
-}
 
 .perks-section .grid__text ul li::before {
     content: url('../images/checkmark.svg');
-    display: inline-block;
-    vertical-align: middle;
-    
+    position: absolute;
+    left: 0;
+    top: 2px;
 }
 
 /* Programs Section */
@@ -353,18 +351,25 @@ nav ul li a:hover {
     margin-bottom: 32px;
 }
 
-.programs-plans .card__bottom ul span {
-    font-size: 18px;
-    line-height: 32px;
-    font-weight: 600;
-    padding-left: 40px;
+.programs-plans .card__bottom ul  {
+    
 }
 
 .programs-plans .card__bottom ul li {
-    background-image: url('../images/checkmark-circle.svg');
-    background-repeat: no-repeat;
-    background-position: 0 center;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 600;
     margin-bottom: 8px;
+    position: relative;
+    padding-left: 32px;
+}
+
+.programs-plans .card__bottom ul li::before {
+    position: absolute;
+    content: url('/images/checkmark-circle.svg');
+    display: inline-block;
+    top: 3px;
+    left: 0;
 }
 
 .programs-plans .btn {
@@ -1031,9 +1036,11 @@ footer .social-links img {
 
     .footer-newsletter .footer-form {
         width: 100%;
+        margin-bottom: 24px;
     }
 
-    .footer form input {
+    .footer form input,
+    .footer form .btn {
         width: 100%;
     }
 
@@ -1042,9 +1049,9 @@ footer .social-links img {
         padding: 0;
     }
 
-
-    
-
+    .footer .grid.container {
+        padding: 24px;
+    }
 
 }
 
