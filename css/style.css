@@ -1058,5 +1058,14 @@ footer .social-links img {
         padding: 24px;
     }
 
+    /* CTA-SESSION */
+    .cta-col-1 {
+        display: none;
+    }
+
+    .cta-col-2 {
+        padding: 32px;
+    }
+
 }
 
