@@ -986,6 +986,12 @@ footer .social-links img {
         width: 75vw;
     }
 
+    /* UTILITIES */
+    .btn {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
      /* HOME | hero-section */
     .hero-content .hero-cta-btns  .btn{
         width: 100%;
