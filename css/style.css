@@ -269,7 +269,7 @@ nav ul li a:hover {
     list-style: none;
 }
 
-.perks-section .grid__text li {
+.perks-section .grid__text ul li {
     font-weight: 600;
     font-size: 18px;
     line-height: 32px;
@@ -280,9 +280,8 @@ nav ul li a:hover {
 }
 
 
-.perks-section .grid__text li::before {
-    content: url('/images/checkmark.svg');
-    display: inline-block;
+.perks-section .grid__text ul li::before {
+    content: url('/images/checkmark-circle.svg');
     position: absolute;
     left: 0;
     top: 2px;
