@@ -281,7 +281,7 @@ nav ul li a:hover {
 
 
 .perks-section .grid__text ul li::before {
-    content: url('/images/checkmark.svg');
+    content: url('../images/checkmark.svg');
     position: absolute;
     left: 0;
     top: 2px;
@@ -362,8 +362,7 @@ nav ul li a:hover {
 
 .programs-plans .card__bottom ul li::before {
     position: absolute;
-    content: url('/images/checkmark-circle.svg');
-    display: inline-block;
+    content: url('../images/checkmark-circle.svg');
     top: 3px;
     left: 0;
 }
