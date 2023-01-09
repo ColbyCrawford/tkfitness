@@ -281,7 +281,7 @@ nav ul li a:hover {
 
 
 .perks-section .grid__text ul li::before {
-    content: url('/images/checkmark-circle.svg');
+    content: url('/images/checkmark.svg');
     position: absolute;
     left: 0;
     top: 2px;
