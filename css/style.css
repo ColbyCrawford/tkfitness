@@ -99,9 +99,9 @@ ul {
     justify-content: space-between;
 }
 
-.main-nav .navigation {
+.main-nav {
     position: relative;
-    z-index: 100;
+    z-index: 1;
 }
 
 .nav-control {
@@ -123,7 +123,7 @@ ul {
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.341);
-    z-index: -100;
+    z-index: -200;
     transition: 0.5s ease-in-out;
 }
 
@@ -803,10 +803,6 @@ footer .social-links img {
 @media only screen and (max-width: 1024px) {
     .programs-plans.flex {
         flex-direction: column;
-    }
-
-    .programs-plans .card {
-        /* max-width: 352px; */
     }
 
     .programs-plans .card.most-popular {
