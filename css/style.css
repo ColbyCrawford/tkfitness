@@ -95,6 +95,14 @@ ul {
 
 /* Navigation */
 
+.main-nav .navigation,
+.nav-control,
+.nav-logo {
+    position: relative;
+    z-index: 300;
+}
+
+
 .navigation.flex {
     justify-content: space-between;
 }
@@ -110,12 +118,6 @@ ul {
     font-size: 2em;
 }
 
-.navigation__logo,
-.nav-control {
-    position: relative;
-    z-index: 300;
-}
-
 .menu-overlay {
     opacity: 0;
     position: absolute;
@@ -125,7 +127,7 @@ ul {
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.341);
     z-index: 100;
-    transition: 0.5s ease-in-out;
+    /* transition: 0.5s ease-in-out; */
 }
 
 .menu-overlay.active {
@@ -860,7 +862,7 @@ footer .social-links img {
         top: 0;
         left: 0;
         background-color: #fff;
-        padding: 80px 8px;
+        padding: 88px 8px;
         left: -100%;
         transition: 0.5s ease-in-out;
         z-index: 200;
@@ -870,6 +872,9 @@ footer .social-links img {
         left: 0;
     }
 
+    nav ul a { 
+        padding: 4px 0;
+    }
 
     /* UTILITIES / ELEMENTS */
     .title, 
